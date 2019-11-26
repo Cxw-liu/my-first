@@ -73,7 +73,7 @@ public class Article implements Serializable {
     private User userArticle;
 	@ManyToOne(cascade = {CascadeType.PERSIST,CascadeType.MERGE,CascadeType.REFRESH},fetch = FetchType.EAGER)//设置了级联增/改/刷新
 	@JoinColumn(name="category_id")
-	private Article category;
+	private Category category;
 
 	/**
 	 * 点赞，收藏，举报   1---1
